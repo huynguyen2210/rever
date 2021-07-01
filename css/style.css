@@ -100,7 +100,6 @@ header {
     padding: 0;
     animation: nav-move 1.5s;
     -webkit-animation: nav-move 1.5s;
-    transition: right .3s ease;
 }
 
 .navbar-collapse a {
@@ -167,7 +166,6 @@ header {
     border: none !important;
     padding: 0;
     margin: 0;
-    transition: height .1s ease;
 }
 
 .navbar-collapse .dropdown-item {
@@ -239,14 +237,14 @@ input[type="text"]:active {
     color: rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1025px) {
     .close-icon,
     .toggler-icon {
         display: none;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     .nav-expand {
         display: none;
     }
@@ -254,30 +252,12 @@ input[type="text"]:active {
 
 @media screen and (max-width: 425px) {
     .banner-content {
-        width: 60%;
-        margin: 10% auto 0;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 25% auto 0;
     }
     .banner-content h1 {
-        text-align: center;
-        color: #fff;
-        font-weight: 700;
-    }
-    .banner-content #prop-sell,
-    .banner-content #prop-rent {
-        display: none;
-    }
-    .banner-content label {
-        font-size: 24px;
-        color: #fff;
-        padding-bottom: 10px;
-        margin-left: 5px;
-    }
-    input[type="radio"]:checked+label {
-        font-weight: 600;
-        border-bottom: 1px solid #fff;
-    }
-    .banner-content .input-group .form-control {
-        border-radius: 0;
-        padding: 1rem;
+        font-size: 35px;
     }
 }
