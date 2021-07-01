@@ -237,6 +237,120 @@ input[type="text"]:active {
     color: rgba(255, 255, 255, 0.1);
 }
 
+
+/* Sticky Rating */
+
+.rating-btn {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 99;
+}
+
+.rating-btn button {
+    border-radius: 2px;
+    background: #2C2B2B;
+    padding: 3px;
+}
+
+.rating-btn button:hover {
+    padding: 5px;
+}
+
+.rating-btn button:hover,
+.rating-btn button:active,
+.rating-btn button:visited,
+.rating-btn button:focus {
+    border-color: none;
+    outline: none;
+    outline-color: none;
+    box-shadow: none;
+}
+
+.rating-btn button p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    margin: 3px;
+}
+
+.rating-btn button p::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f27a";
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.rating-box {
+    display: none;
+    position: fixed;
+    top: 45%;
+    right: 1rem;
+    padding: 1rem 0.5rem;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.rating-box button,
+.rating-box button:hover,
+.rating-box button:active,
+.rating-box button:visited,
+.rating-box button:focus {
+    background: #fff;
+    border-color: none;
+    outline: none;
+    outline-color: none;
+    box-shadow: none;
+}
+
+.angry-emj span::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    content: "\f556";
+    color: #FFD903;
+    margin-bottom: 10px;
+}
+
+.frown-emj span::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    content: "\f556";
+    color: #FFD903;
+    margin-bottom: 10px;
+}
+
+.poker-emj span::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    content: "\f11a";
+    color: #FFD903;
+    margin-bottom: 10px;
+}
+
+.like-emj span::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    content: "\f581";
+    color: #FFD903;
+    margin-bottom: 10px;
+}
+
+.love-emj span::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    content: "\f584";
+    color: #FFD903;
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 1025px) {
     .close-icon,
     .toggler-icon {
